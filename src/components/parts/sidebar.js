@@ -1,8 +1,6 @@
 // Sidebar.js
 import React, {useState} from 'react';
-import { BsChevronCompactDown } from 'react-icons/bs';
 import { HiOutlineChevronDown } from 'react-icons/hi';
-import { BiSolidUser } from 'react-icons/bi';
 const Sidebar = () => {
   const [activeMenu, setActiveMenu] = useState(null);
 

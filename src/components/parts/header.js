@@ -1,7 +1,6 @@
 // Header.js
 import React,{useEffect, useState} from 'react';
 import { BsBellFill } from 'react-icons/bs';
-import { BsChevronCompactDown } from 'react-icons/bs';
 import { HiOutlineChevronDown } from 'react-icons/hi';
 
 const Header = () => {
@@ -33,7 +32,7 @@ const Header = () => {
     <header>
       <div className="header_wrapper">
         <div className='header_logo'>
-          <img src="./img/login/logo.png"/>
+          <img src="./img/login/logo.png" alt='img'/>
           <h2>J. Mehta & Co.</h2>
         </div>
         <div className='header_title_area'>
@@ -46,7 +45,7 @@ const Header = () => {
           {formatTime(currentTime)}
         </div>      
         <div className='header_profile_acc'>
-          <img src="./img/user.svg"/>
+          <img src="./img/user.svg" alt='img'/>
           <h5>J Mehta</h5>
         </div>
         <div className='header_down_menu'>

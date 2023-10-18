@@ -1,11 +1,7 @@
 // App.js
 import React, { useEffect, useRef, useState } from 'react';
 import { Bar, Doughnut  } from 'react-chartjs-2';
-import Chart from 'chart.js/auto';
 import Dashboard from '../components/dashboard.js';
-import { AiFillCloseCircle } from 'react-icons/ai';
-import Input2 from '../components/parts/input2.js';
-import { HiOutlineChevronDown } from 'react-icons/hi';
 
 
 const Dashboard_main = () => {
@@ -76,7 +72,7 @@ const Dashboard_main = () => {
                             </div>
                             <div class="col-md-3 p-0">
                                 <div class="d-flex form-inputs">
-                                    <img src="../img/search.png" width={22} height={22} />
+                                    <img src="../img/search.png" width={22} height={22} alt='img'/>
                                     <input class="form-control input-white" type="text" placeholder="Search" />
                                     
                                 </div>
@@ -87,7 +83,7 @@ const Dashboard_main = () => {
                             <div className='admin_dashboard_status1'>
                                 <div className='admin_dashboard_status1_count'>
                                     <div className='admin_dashboard_status1_circle'>
-                                    <img src="../money-saving.png"/>
+                                    <img src="../money-saving.png" alt='img'/>
                                     </div>
                                 </div>
                                 <div className='admin_dashboard_status1_title'>
@@ -99,7 +95,7 @@ const Dashboard_main = () => {
                             <div className='admin_dashboard_status2'>
                                 <div className='admin_dashboard_status2_count'>
                                     <div className='admin_dashboard_status2_circle'>
-                                    <img src="../note.png"/>
+                                    <img src="../note.png" alt='img'/>
                                     </div>
                                 </div>
                                 <div className='admin_dashboard_status2_title'>
@@ -111,7 +107,7 @@ const Dashboard_main = () => {
                             <div className='admin_dashboard_status3'>
                                 <div className='admin_dashboard_status3_count'>
                                     <div className='admin_dashboard_status3_circle'>
-                                    <img src="../wallet.png"/>
+                                    <img src="../wallet.png" alt='img'/>
                                     </div>
                                 </div>
                                 <div className='admin_dashboard_status3_title'>
@@ -123,7 +119,7 @@ const Dashboard_main = () => {
                             <div className='admin_dashboard_status4'>
                                 <div className='admin_dashboard_status4_count'>
                                     <div className='admin_dashboard_status4_circle'>
-                                    <img src="../bag.png"/>
+                                    <img src="../bag.png" alt='img'/>
                                     </div>
                                 </div>
                                 <div className='admin_dashboard_status4_title'>
@@ -244,7 +240,7 @@ const Dashboard_main = () => {
                             </div>
                             <div class="col-md-3">
                                 <div class="d-flex form-inputs">
-                                    <img src="../img/search.png" width={22} height={22} />
+                                    <img src="../img/search.png" width={22} height={22} alt='img'/>
                                     <input class="form-control" type="text" placeholder="Search" />
                                     
                                 </div>
@@ -275,7 +271,7 @@ const Dashboard_main = () => {
                                 <tr>
                                     <th className='pl-1' scope="row">
                                         <div className='imgtext'>
-                                        <img  src="../abstract.jpeg" width={80}/>
+                                        <img  src="../abstract.jpeg" width={80} alt='img'/>
                                             <div className='content_div'>
                                                 <h3>Abstract 3D</h3>
                                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</span>
@@ -292,7 +288,7 @@ const Dashboard_main = () => {
                                 <tr>
                                     <th className='pl-1' scope="row">
                                         <div className='imgtext'>
-                                            <img  src="../sarphens.jpg" width={80} />
+                                            <img  src="../sarphens.jpg" width={80} alt='img'/>
                                             <div className='content_div'>
                                                 <h3>Sarphens Illustration</h3>
                                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</span>
