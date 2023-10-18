@@ -1,37 +1,37 @@
 // App.js
-import React, { useEffect, useRef, useState } from 'react';
-import { Bar, Doughnut  } from 'react-chartjs-2';
+import React, { useState } from 'react';
+// import { Bar, Doughnut  } from 'react-chartjs-2';
 import Dashboard from '../components/dashboard.js';
 
 
 const Dashboard_main = () => {
-    const canvasRef = useRef(null);
+//     const canvasRef = useRef(null);
 
-  // Ensure the ref is assigned to a <canvas> element before using it
-  useEffect(() => {
-    if (canvasRef.current) {
-      const ctx = canvasRef.current.getContext('2d');
-      if (ctx) {
-        // You can create your chart here if needed
-      }
-    }
-  }, []);
+//   // Ensure the ref is assigned to a <canvas> element before using it
+//   useEffect(() => {
+//     if (canvasRef.current) {
+//       const ctx = canvasRef.current.getContext('2d');
+//       if (ctx) {
+//         // You can create your chart here if needed
+//       }
+//     }
+//   }, []);
   const [selectedOption, setSelectedOption] = useState(''); // State to manage the selected option
 
   const handleSelectChange = (e) => {
     setSelectedOption(e.target.value); // Update the selected option when the user makes a choice
   };
    // Data for your doughnut chart
-   const data = {
-    labels: [],
-    datasets: [
-      {
-        data: [100, 280, 200],
-        backgroundColor: ["#FF6384", "#6138EA", "#F1EFFC"],
-        hoverBackgroundColor: ["#FF6384", "#36A2EB", "#F1EFFC"],
-      },
-    ],
-  };
+//    const data = {
+//     labels: [],
+//     datasets: [
+//       {
+//         data: [100, 280, 200],
+//         backgroundColor: ["#FF6384", "#6138EA", "#F1EFFC"],
+//         hoverBackgroundColor: ["#FF6384", "#36A2EB", "#F1EFFC"],
+//       },
+//     ],
+//   };
   const containerStyle = {
     width: "250px", // Set your custom width
     height: "250px", // Set your custom height
@@ -39,27 +39,27 @@ const Dashboard_main = () => {
   const customPadding = {
     padding: "0 1vw 0 0", // Your custom padding value
   };
-  const handleHover = (event, chartElements) => {
-    if (chartElements[0]) {
-      // Zoom-out effect by increasing the cutout percentage
-      const newCutoutPercentage = 60; // Adjust this value as needed
-      chartElements[0]._chart.options.cutoutPercentage = newCutoutPercentage;
-      chartElements[0]._chart.update();
-    }
-  };
-  // Additional options for the chart
-  const options = {
-    legend: {
-      display: false,
-    },
-    cutout: 80, // Adjust this value for the initial thickness
-    elements: {
-      arc: {
-        borderWidth: 0,
-        onHover: handleHover, // Call the custom hover effect function
-      },
-    },
-  };
+//   const handleHover = (event, chartElements) => {
+//     if (chartElements[0]) {
+//       // Zoom-out effect by increasing the cutout percentage
+//       const newCutoutPercentage = 60; // Adjust this value as needed
+//       chartElements[0]._chart.options.cutoutPercentage = newCutoutPercentage;
+//       chartElements[0]._chart.update();
+//     }
+//   };
+//   // Additional options for the chart
+//   const options = {
+//     legend: {
+//       display: false,
+//     },
+//     cutout: 80, // Adjust this value for the initial thickness
+//     elements: {
+//       arc: {
+//         borderWidth: 0,
+//         onHover: handleHover, // Call the custom hover effect function
+//       },
+//     },
+//   };
     return (
         <div className='admin_dashboard_main'>
             <Dashboard>
@@ -155,7 +155,7 @@ const Dashboard_main = () => {
                             </div>
                             
                         </div>
-                            <div>
+                            {/* <div>
                                 <Bar
                                     ref={canvasRef}  // Attach the ref to the <Bar> component
                                     data={{
@@ -205,10 +205,10 @@ const Dashboard_main = () => {
                                           },
                                     }}
                                 />
-                            </div>
+                            </div> */}
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    {/* <div class="col-md-4">
                         <div className='doughnut-chart'>
                             <div className='row d-flex align-items-center bar_section'>
                                 <div class="col-md-12">
@@ -227,7 +227,7 @@ const Dashboard_main = () => {
                             
                         </div>
 
-                    </div>
+                    </div> */}
 
                 </div>
                  
