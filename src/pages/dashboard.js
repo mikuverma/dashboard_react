@@ -32,10 +32,10 @@ const Dashboard_main = () => {
 //       },
 //     ],
 //   };
-  const containerStyle = {
-    width: "250px", // Set your custom width
-    height: "250px", // Set your custom height
-  };
+//   const containerStyle = {
+//     width: "250px", // Set your custom width
+//     height: "250px", // Set your custom height
+//   };
   const customPadding = {
     padding: "0 1vw 0 0", // Your custom padding value
   };
